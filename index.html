@@ -34,12 +34,10 @@
           <span class="credits left">Project maintained by <a href="https://github.com/xxblakefailxx">xxblakefailxx</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
-
+      </section>
       <section>
-        <h2>
-          <a name="sticky-footer" class="anchor" href="#sticky-footer"><span class="octicon octicon-link"></span></a>Sticky Footer</h2>
-
-          <p>So I came across something interesting when looking at a friend's site recently. This is a problem I think a lot of developers have run into at some point in their career. This issue is a sticky footer. My friend wanted a footer at the bottom of the page that if the content was too long it wouldn't sit on top of it, this elimates just having a positioned footer. You can probably think of some other solutions but initial guesses don't lead to what you want and you decide to search the internet. Looking at <a href="http://getbootstrap.com/2.3.2/examples/sticky-footer.html">twitter bootstraps sticky footer example</a> I noticed they went about fixing it the same way my friend did. They use a basic structure like so</p>
+          <h2><a name="sticky-footer" class="anchor" href="#sticky-footer"><span class="octicon octicon-link"></span></a>Sticky Footer</h2>
+          <p>So I came across something interesting when looking at a friend's site recently. This is a problem I think a lot of developers have run into at some point in their career. This issue is a sticky footer. My friend wanted a footer at the bottom of the page that if the content was too long it wouldn't sit on top of it, this elimates just having a positioned footer. You can probably think of some other solutions but initial guesses don't lead to what you want and you decide to search the internet. Looking at <a href="http://getbootstrap.com/2.3.2/examples/sticky-footer.html">twitter bootstraps sticky footer example</a> I noticed they went about fixing it the same way my friend did. They use a basic structure like so:</p>
 <code>
 <pre>&lt;body&gt;
     &lt;container&gt;
@@ -50,10 +48,9 @@
     &lt;/footer&gt;
 &lt;/body&gt;</pre>
 </code>
-      <p>the way this trick works is to make the first container take up 100 percent of the height. Then create a negative margin on container to allow the footer to show. Right now we have a footer showing on the bottom but the content is able to eat over the footer because the negative margin causes the two to occupy the same space. To fix this a lot of people have decided to add a "push" div that sits and has no content but is given the height of the footer. This makes sure that the content doesn't touch the footer.</p> 
-      <p>My question is why are people doing this? They are effectively creating their own form of padding with a div? Why not just use padding? I tested just using padding and it works the same, as it should. Upon speaking with a couple friends one of them googled and came across a site that actually uses what I am saying <a href="http://www.cssstickyfooter.com/">http://www.cssstickyfooter.com/</a>, so I guess I was on the right track. It is interesting though that so many people used the other solution for awhile. Blindlessly following a solution without actually thinking about what was happening sorta shows how a lot of us just take css for granted.</p>
-       <p style="text-align: right">Friday, August 23, 2013. 3:24 PM</p>
-     </section>
+        <p>the way this trick works is to make the first container take up 100 percent of the height. Then create a negative margin on container to allow the footer to show. Right now we have a footer showing on the bottom but the content is able to eat over the footer because the negative margin causes the two to occupy the same space. To fix this a lot of people have decided to add a "push" div that sits and has no content but is given the height of the footer. This makes sure that the content doesn't touch the footer.</p> 
+        <p>My question is why are people doing this? They are effectively creating their own form of padding with a div? Why not just use padding? I tested just using padding and it works the same, as it should. Upon speaking with a couple friends one of them googled and came across a site that actually uses what I am saying <a href="http://www.cssstickyfooter.com/">http://www.cssstickyfooter.com/</a>, so I guess I was on the right track. It is interesting though that so many people used the other solution for awhile. Blindlessly following a solution without actually thinking about what was happening sorta shows how a lot of us just take css for granted.</p>
+        <p style="text-align: right">Friday, August 23, 2013. 3:24 PM</p>
       </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
